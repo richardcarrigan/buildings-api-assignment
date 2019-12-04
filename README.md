@@ -3,7 +3,7 @@
 #### Introduction
 
 This project is intended to test your Java skills with focus on building Web APIs
-Refer to the email sent to you on how to complete this assigment
+Refer to the email sent to you on how to complete this assignment.
 
 #### Getting to know your project
 
@@ -50,6 +50,12 @@ mvn -version
 3. `mvn spring-boot:run` 
  - this invokes the project and binds the server to port 8080 
 
+#### Docker
+
+Alternatively, if there are issues with local installs of Java or Maven, you can build/test/run the app with Docker.
+
+    docker build -t buildings-api-assignment .
+    docker run -it -p8080:8080 buildings-api-assignment
 
 #### How to invoke and access the default (root) controller
 1. From the command line `curl localhost:8080`
@@ -59,7 +65,7 @@ mvn -version
 #### Special notes
 1. This project uses Lombok to generate boilerplate getters/setters
 2. To install [Lombok](https://projectlombok.org/)
-3. We strongly recommend [IntelliJ](https://www.jetbrains.com/idea/download/) - community eddition is free
+3. We strongly recommend [IntelliJ](https://www.jetbrains.com/idea/download/) - community edition is free
 
 #### H2 enabled
 To simplify data access, this project uses an embedded database H2
