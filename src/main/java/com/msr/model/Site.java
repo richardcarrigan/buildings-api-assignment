@@ -1,9 +1,6 @@
 package com.msr.model;
 
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
@@ -16,10 +13,11 @@ import java.util.List;
  * @author Measurabl
  * @since 2019-06-06
  */
-@Data
+@Getter
+@Setter
 @NoArgsConstructor
 @AllArgsConstructor
-@Builder
+@Builder(toBuilder = true)
 @Entity
 public class Site {
 
@@ -37,10 +35,9 @@ public class Site {
     private String zipcode;
 
     @Transient
-    private List<SiteUses> siteUses;
+    private List<SiteUse> siteUses;
 }
 
 ////////////////////////////////////////////////////////////
 // Copyright 2018  Measurabl, Inc. All rights reserved.
 ////////////////////////////////////////////////////////////
-    

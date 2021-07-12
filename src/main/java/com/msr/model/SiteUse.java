@@ -2,26 +2,30 @@ package com.msr.model;
 
 import lombok.Data;
 
-import javax.persistence.Entity;
 import javax.persistence.Id;
 
 /**
- * Lookup types
+ * Site uses POJO
  *
  * @author Measurabl
  * @since 2019-06-11
  */
 @Data
-@Entity
-public class UseTypes {
-
+public class SiteUse {
     @Id
     private int id;
 
-    private String name;
+    private int siteId;
+
+    private String description;
+
+    private long sizeSqft;
+
+    private int useTypeId;
+
+    private UseType useType;
 }
 
 ////////////////////////////////////////////////////////////
 // Copyright 2018  Measurabl, Inc. All rights reserved.
 ////////////////////////////////////////////////////////////
-    
