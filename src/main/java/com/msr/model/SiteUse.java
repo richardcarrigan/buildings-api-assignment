@@ -4,12 +4,6 @@ import lombok.Data;
 
 import javax.persistence.Id;
 
-/**
- * Site uses POJO
- *
- * @author Measurabl
- * @since 2019-06-11
- */
 @Data
 public class SiteUse {
     @Id
@@ -25,7 +19,3 @@ public class SiteUse {
 
     private UseType useType;
 }
-
-////////////////////////////////////////////////////////////
-// Copyright 2018  Measurabl, Inc. All rights reserved.
-////////////////////////////////////////////////////////////

@@ -6,12 +6,6 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.nio.charset.Charset;
 
-/**
- * File: ClasspathUtil
- *
- * @author Measurabl
- * @since 2019-06-11
- */
 public class ClasspathUtil {
     public static String readFileToString(String path, Class aClass) throws IOException {
 
@@ -24,8 +18,3 @@ public class ClasspathUtil {
         }
     }
 }
-
-////////////////////////////////////////////////////////////
-// Copyright 2018  Measurabl, Inc. All rights reserved.
-////////////////////////////////////////////////////////////
-    

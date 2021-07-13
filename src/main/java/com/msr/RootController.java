@@ -12,17 +12,13 @@ import java.util.Map;
 
 /**
  * Respond to root requests
- *
- * @author Measurabl
- * @since 2019-05-23
  */
-
 @Log4j2
 @RestController
 @RequestMapping("/")
 public class RootController {
 
-    private BuildProperties buildProperties;
+    private final BuildProperties buildProperties;
 
     @Autowired
     public RootController(BuildProperties buildProperties) {
@@ -40,8 +36,3 @@ public class RootController {
         );
     }
 }
-
-////////////////////////////////////////////////////////////
-// Copyright 2018  Measurabl, Inc. All rights reserved.
-////////////////////////////////////////////////////////////
-    

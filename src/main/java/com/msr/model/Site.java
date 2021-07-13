@@ -7,20 +7,12 @@ import javax.persistence.Id;
 import javax.persistence.Transient;
 import java.util.List;
 
-/**
- * Site info
- *
- * @author Measurabl
- * @since 2019-06-06
- */
-@Getter
-@Setter
+@Data
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder(toBuilder = true)
 @Entity
 public class Site {
-
     @Id
     private int id;
 
@@ -37,7 +29,3 @@ public class Site {
     @Transient
     private List<SiteUse> siteUses;
 }
-
-////////////////////////////////////////////////////////////
-// Copyright 2018  Measurabl, Inc. All rights reserved.
-////////////////////////////////////////////////////////////
